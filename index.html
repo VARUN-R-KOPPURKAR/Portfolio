@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated personal portfolio</title>
+    <link rel="stylesheet" href="project_style.css"> 
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital@0;1&display=swap" rel="stylesheet">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+    <style>
+
+        .navbar{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: lightblue;
+            height: 1.5cm;
+            cursor: pointer;
+        }
+        .menu{
+            display:none;
+        }
+       
+
+body {
+    font-family: 'Cabin', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #333;
+}
+
+header {
+    background-color: lightblue;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.span{
+    color: #fff;
+}
+.navbar {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0px;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #8f2d56;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.home-text {
+    margin-left: 10px;
+    margin-top: 100px;
+    position: absolute;
+    color: #fff;
+    
+    
+}
+
+.home h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+    color: #8f2d56;
+}
+
+.home p {
+    color: #fff;
+}
+
+.main {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: lightblue;
+    color: #333;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: lightblue;
+    box-shadow: 0 0 5px #8f2d56,
+    0 0 25px #8f2d56;
+}
+
+.btn.two {
+    background-color: lightblue;
+    box-shadow: 0 0 5px #8f2d56,
+    0 0 25px #8f2d56;
+}
+
+.btn.two:hover{
+    box-shadow: 0 0 5px #8f2d56,
+    0 0 15px #8f2d56, 0 0 25px #8f2d56,
+    0 0 35px #8f2d56, 0 0 45px #8f2d56;
+}
+
+.btn:hover{
+    box-shadow: 0 0 5px #8f2d56,
+    0 0 15px #8f2d56, 0 0 25px #8f2d56,
+    0 0 35px #8f2d56, 0 0 45px #8f2d56;
+}
+
+.home-img img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.share {
+    text-align: center;
+    float: left;
+    margin-top: 500px;
+    
+    
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+   
+}
+
+.social a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.social img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: color,transform 0.3s ease;
+    border-radius: 50%;
+}
+
+.social img:hover {
+    transform: scale(1.2);
+    color: rgb(53, 154, 174);
+}
+.home-img{
+width: 200px; 
+margin-right: 50px;
+width: 200px;
+margin-top: 300px;
+border-radius: 20px; 
+box-shadow: 10px 10px 10px rgba(85, 193, 197, 0.3); 
+transition: translate(-50%,-50%);
+top:50%;
+left: 50%;
+transition: 0.15s;
+display: inline-block;
+}
+
+.home-img img:hover {
+    transform: scale(1.1);
+}
+.home-img{
+    margin-top: 100px;
+    
+}
+.About-Myself{
+    margin-top: 700px;
+    margin-right:900px;
+    color: #8f2d56;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <a href="home.html" class="logo"><span>P</span>ortfolio</a>
+        <ul class="navbar">
+            <li><a href="home.html" target="_blank" class="active">Home</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank">chat</a></li>
+            <li><a href="education.html" target="_blank">Education</a></li>
+            <li><a href="Resume_.html" target="_blank">Resume</a></li>
+            <li><a href="socialmedia.html"target="_blank">Social media</a></li> 
+            <li><a href="https://www.instagram.com/direct/inbox/?next=%2F" target="_blank">Contacts</a></li>
+        </ul>
+    
+    </div>
+    </header>
+    <section class="home">
+        <div class="home-text">
+            <span>Web Developer</span>
+            <h1></h1>
+            <p>I'm currently completing my degree at RV UNIVERSITY</p>
+            <div class="main">
+                <a href="Resume_.html" target="_blank" class="btn">My ..CV</a>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBnNfNLxhZPxRDHQFWxfJwcMBwxLFnNmBNqdSPbbVzlQwbdGHlWlCFnnzBZQvCsMxgwfWhL" class="btn two">Hire now</a>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="WhatsApp Image 2024-01-05 at 20.15.13_21b63710.jpg" alt="my image">
+        </div>
+        
+        <div class="share">
+            <p>Checkout my:</p>
+            <div class="social">
+                <a href="hhttps://github.com/" target="_blank"><img src="bxl-github.svg"></a>
+                <a href="fhttps://www.facebook.com/login/device-based/regular/login/?login_attempt=1&lwv=120&lwc=1348092" target="_blank"><img src="facebook.svg"></a>
+                <a href="https://www.linkedin.com/home?originalSubdomain=in" target="_blank"><img src="linkedin.svg"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="instagram.svg"></a>
+            </div>
+        </div>
+    </section>
+   
+    
+   
+
+<script>
+ 
+    document.addEventListener("DOMContentLoaded", function () {
+        var nameElement = document.querySelector('.home h1');
+        var nameText = "VARUN R KOPPURKAR";
+        var index = 0;
+
+        function type() {
+            if (index < nameText.length) {
+                nameElement.textContent += nameText.charAt(index);
+                index++;
+                setTimeout(type, 100);
+            } else {
+               
+                index = 0;
+                nameElement.textContent = ""; 
+            }
+        }
+
+        
+        setInterval(type, 2000); 
+
+    
+        var hireButton = document.querySelector('.btn.two');
+        hireButton.addEventListener('click', function () {
+            var randomColor = getRandomColor();
+            hireButton.style.backgroundColor = randomColor;
+            
+        
+            alert('Thank you for your interest! We will get in touch with you.');
+        });
+
+      
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+    });
+
+</script>
+
+</script>
+
+
+</body>
+</html>
+
